@@ -1,0 +1,4 @@
+public enum StaffRole {
+    COACH, ASSISTANT,PHYSIOTHERAPIST,SCOUT
+
+}
