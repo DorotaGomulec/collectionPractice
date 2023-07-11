@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="switch option worked">
-      <change afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
+    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="case 1 and 4 ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688981656401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="case 1 work">
+      <created>1689065677423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689065677423</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +116,9 @@
     <MESSAGE value="classed created" />
     <MESSAGE value="options ideas" />
     <MESSAGE value="switch option worked" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch option worked" />
+    <MESSAGE value="case 1 ready" />
+    <MESSAGE value="case 1 work" />
+    <MESSAGE value="case 1 and 4 ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="case 1 and 4 ready" />
   </component>
 </project>

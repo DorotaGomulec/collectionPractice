@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Player extends Employee {
-    PlayerPosition playerPosition;
-    int height;
+    private PlayerPosition playerPosition;
+    private int height;
     public Player() {}
     public Player(String name, int age, PlayerPosition playerPosition, int height) {
         super( name, age);
@@ -28,6 +25,6 @@ public class Player extends Employee {
     }
 
     public String toString() {
-        return "Name: " + name + ", age: " + age + ", position: " + playerPosition + " , heigh: " + height + "\n";
+        return "Name: %s, age: %s, position: %s, height: %s \n ".formatted( getName(),getAge(),getPlayerPosition(),getHeight()).toUpperCase();
     }
 }

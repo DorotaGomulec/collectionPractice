@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Employee {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     ArrayList<Employee> employeeArrayList = new ArrayList<>();
     HashMap<String,Employee> stringEmployeeHashMap = new HashMap<>();
