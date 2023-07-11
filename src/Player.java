@@ -1,10 +1,11 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
-
-public class Player extends Employee{
+public class Player extends Employee {
     PlayerPosition playerPosition;
     int height;
-
-    public Player(String name, int age, PlayerPosition playerPosition, int number, int height) {
+    public Player() {}
+    public Player(String name, int age, PlayerPosition playerPosition, int height) {
         super( name, age);
         this.playerPosition = playerPosition;
         this.height = height;
@@ -24,5 +25,9 @@ public class Player extends Employee{
 
     public void setPlayerPosition(PlayerPosition playerPosition) {
         this.playerPosition = playerPosition;
+    }
+
+    public String toString() {
+        return "Name: " + name + ", age: " + age + ", position: " + playerPosition + " , heigh: " + height + "\n";
     }
 }

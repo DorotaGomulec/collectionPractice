@@ -1,6 +1,15 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Employee {
     String name;
     int age;
+
+    ArrayList<Employee> employeeArrayList = new ArrayList<>();
+    HashMap<String,Employee> stringEmployeeHashMap = new HashMap<>();
+
+    public Employee() {
+    }
 
     public Employee(String name, int age) {
         this.name = name;
