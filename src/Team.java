@@ -1,11 +1,12 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+
+import java.util.*;
 
 public class Team {
     ArrayList<Player> playerArrayList = new ArrayList<>();
     ArrayList<Staff> staffArrayList = new ArrayList<>();
     HashMap<String,Staff> stringStaffHashMap = new HashMap<>();
+    Set<PlayerPosition> playerPositions = new HashSet<>();
+
     Scanner scanner = new Scanner( System.in );
     private String name;
     private int age;
@@ -42,8 +43,7 @@ public class Team {
 
         Player player = new Player( name, age, playerPosition, height );
         playerArrayList.add( player );
-
-
+        playerPositions.add( playerPosition );
     }
 
     public void addStaff() {
@@ -73,3 +73,4 @@ public class Team {
         System.out.println(stringStaffHashMap.get( staffToFind ));
     }
 }
+

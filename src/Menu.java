@@ -15,7 +15,7 @@ public class Menu {
         System.out.println( "6. Sort Player by height" );
         System.out.println( "7. Sort Employee by name" );
         System.out.println( "8. Find Staff by name" );
-        System.out.println( "9. Find Player by field position" );
+        System.out.println( "9. Find occupied field position in team ");
         System.out.println( "10. Count players and staff" );
         System.out.println( "11. That's all for today" );
     }
@@ -37,7 +37,7 @@ public class Menu {
                 case 6 -> System.out.println( 6 );
                 case 7 -> System.out.println( 7 );
                 case 8 -> team.staffByName();
-                case 9 -> System.out.println( 9 );
+                case 9 -> System.out.println(team.playerPositions);
                 case 10 -> System.out.println( 10 );
                 case 11 -> {
                     System.out.println("THANK YOU");
