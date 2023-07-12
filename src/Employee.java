@@ -5,9 +5,6 @@ public class Employee {
     private String name;
     private int age;
 
-    ArrayList<Employee> employeeArrayList = new ArrayList<>();
-    HashMap<String,Employee> stringEmployeeHashMap = new HashMap<>();
-
     public Employee() {
     }
 

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="case 1, 4, 11 ready">
+    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="case 2,5 ready&#10;class Team - delete duplicates in add... method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689068778577</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="case 2,5 ready&#10;class Team - delete duplicates in add... method">
+      <created>1689147224389</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689147224389</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +134,7 @@
     <MESSAGE value="case 1 work" />
     <MESSAGE value="case 1 and 4 ready" />
     <MESSAGE value="cases: 1, 4, 11 ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="cases: 1, 4, 11 ready" />
+    <MESSAGE value="case 2,5 ready&#10;class Team - delete duplicates in add... method" />
+    <option name="LAST_COMMIT_MESSAGE" value="case 2,5 ready&#10;class Team - delete duplicates in add... method" />
   </component>
 </project>
