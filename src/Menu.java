@@ -15,7 +15,7 @@ public class Menu {
         System.out.println( "6. Sort Player by height" );
         System.out.println( "7. Sort Employee by name" );
         System.out.println( "8. Find Staff by name" );
-        System.out.println( "9. Find occupied field position in team ");
+        System.out.println( "9. Find occupied field position in your team ");
         System.out.println( "10. Count players and staff" );
         System.out.println( "11. That's all for today" );
     }
