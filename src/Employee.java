@@ -32,4 +32,8 @@ public class Employee {
         this.age = age;
     }
 
+    public String toString() {
+        return "Name: %s, age: %s\n".formatted( getName(),getAge()).toUpperCase();
+    }
+
 }

@@ -8,7 +8,7 @@ public class Menu {
     private void showMenu() {
         System.out.println( "CHOOSE OPTION FROM 1 TO 11" );
         System.out.println( "1. Add Player" );
-        System.out.println( "2. Add Staff Employee" );
+        System.out.println( "2. Add Staff Person" );
         System.out.println( "3. Show all Employee" );
         System.out.println( "4. Show players" );
         System.out.println( "5. Show staff" );
@@ -30,10 +30,10 @@ public class Menu {
 
             switch (userChoice) {
                 case 1 -> team.addPlayer();
-                case 2 -> System.out.println(2);
+                case 2 -> team.addStaff();
                 case 3 -> System.out.println( 3 );
                 case 4 -> System.out.println(team.playerArrayList.toString());
-                case 5 -> System.out.println( 5 );
+                case 5 -> System.out.println( team.staffArrayList );
                 case 6 -> System.out.println( 6 );
                 case 7 -> System.out.println( 7 );
                 case 8 -> System.out.println( 8 );
