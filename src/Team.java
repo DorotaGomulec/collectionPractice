@@ -6,6 +6,7 @@ public class Team {
     ArrayList<Staff> staffArrayList = new ArrayList<>();
     HashMap<String,Staff> stringStaffHashMap = new HashMap<>();
     Set<PlayerPosition> playerPositions = new HashSet<>();
+    ArrayList<Employee> employeeList = new ArrayList<>();
 
     Scanner scanner = new Scanner( System.in );
     private String name;
@@ -44,13 +45,14 @@ public class Team {
         Player player = new Player( name, age, playerPosition, height );
         playerArrayList.add( player );
         playerPositions.add( playerPosition );
+        employeeList.add( player );
     }
 
     public void addStaff() {
         addEmployee();
 
         System.out.println( "What is his/her role in team? Choose from 1 to 4." );
-        System.out.println( "1. COACH\n2. ASSISTANT\n3 .PHYSIOTHERAPIST\n4. SCOUT\n" );
+        System.out.println( "1. COACH\n2. ASSISTANT\n3. PHYSIOTHERAPIST\n4. SCOUT\n" );
         int userChoice = scanner.nextInt();
         StaffRole staffRole = null;
         switch (userChoice) {
@@ -63,6 +65,7 @@ public class Team {
 
         Staff staff = new Staff( name, age, staffRole );
         staffArrayList.add( staff );
+        employeeList.add( staff );
 
         stringStaffHashMap.put( staff.getName(), staff );
     }
@@ -71,6 +74,16 @@ public class Team {
         System.out.println("Write name to get more info");
         String staffToFind = scanner.nextLine();
         System.out.println(stringStaffHashMap.get( staffToFind ));
+    }
+
+    public void showAllEmployee(){
+        for ( Employee e : employeeList){
+            System.out.println(e.getName());
+        }
+    }
+
+    public void countEmployee() {
+        System.out.println(employeeList.size());
     }
 }
 
