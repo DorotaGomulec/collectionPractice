@@ -4,14 +4,12 @@ import java.util.*;
 public class Team {
     ArrayList<Player> playerArrayList = new ArrayList<>();
     ArrayList<Staff> staffArrayList = new ArrayList<>();
-    HashMap<String,Staff> stringStaffHashMap = new HashMap<>();
+    HashMap<String, Staff> stringStaffHashMap = new HashMap<>();
     Set<PlayerPosition> playerPositions = new HashSet<>();
     ArrayList<Employee> employeeList = new ArrayList<>();
-
     Scanner scanner = new Scanner( System.in );
     private String name;
     private int age;
-
     private void addEmployee() {
         System.out.println( "Write name" );
         name = scanner.nextLine();
@@ -71,19 +69,36 @@ public class Team {
     }
 
     public void staffByName() {
-        System.out.println("Write name to get more info");
+        System.out.println( "Write name to get more info" );
         String staffToFind = scanner.nextLine();
-        System.out.println(stringStaffHashMap.get( staffToFind ));
+        System.out.println( stringStaffHashMap.get( staffToFind ) );
     }
 
-    public void showAllEmployee(){
-        for ( Employee e : employeeList){
-            System.out.println(e.getName());
+    public void showAllEmployee() {
+        for (Employee e : employeeList) {
+            System.out.println( e.getName() );
         }
     }
 
     public void countEmployee() {
-        System.out.println(employeeList.size());
+        System.out.println( employeeList.size() );
     }
+
+    public void displayEmpByName() {
+        Collections.sort( employeeList );
+        for (Employee employee : employeeList) {
+            System.out.println( employee.getName() );
+        }
+    }
+
+    public void displayPlByHeight() {
+        HeightCompare heightCompare = new HeightCompare();
+        Collections.sort( playerArrayList, heightCompare );
+        for (Player player : playerArrayList) {
+            System.out.println( "Name: " + player.getName() + ", height: " + player.getHeight() );
+        }
+    }
+
+
 }
 
