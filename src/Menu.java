@@ -1,5 +1,7 @@
 import java.util.Collections;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
 
 public class Menu {
     Scanner scanner = new Scanner( System.in );
@@ -23,27 +25,33 @@ public class Menu {
     int userChoice;
 
     public void starter() {
+
+
         while (userChoice != 11) {
+            try {
+                showMenu();
+                int userChoice = scanner.nextInt();
 
-            showMenu();
-
-            int userChoice = scanner.nextInt();
-
-            switch (userChoice) {
-                case 1 -> team.addPlayer();
-                case 2 -> team.addStaff();
-                case 3 -> team.showAllEmployee();
-                case 4 -> System.out.println( team.playerArrayList.toString() );
-                case 5 -> System.out.println( team.staffArrayList.toString() );
-                case 6 -> team.displayPlByHeight();
-                case 7 -> team.displayEmpByName();
-                case 8 -> team.staffByName();
-                case 9 -> System.out.println( team.playerPositions );
-                case 10 -> team.countEmployee();
-                case 11 -> {
-                    System.out.println( "THANK YOU" );
-                    System.exit( 1 );
+                switch (userChoice) {
+                    case 1 -> team.addPlayer();
+                    case 2 -> team.addStaff();
+                    case 3 -> team.showAllEmployee();
+                    case 4 -> System.out.println( team.playerArrayList.toString() );
+                    case 5 -> System.out.println( team.staffArrayList.toString() );
+                    case 6 -> team.displayPlByHeight();
+                    case 7 -> team.displayEmpByName();
+                    case 8 -> team.staffByName();
+                    case 9 -> System.out.println( team.playerPositions );
+                    case 10 -> team.countEmployee();
+                    case 11 -> {
+                        System.out.println( "THANK YOU" );
+                        System.exit( 1 );
+                    }
+                    default -> System.out.println( "Try again. The entered number must be between 1 and 11." );
                 }
+            } catch (InputMismatchException e) {
+                System.out.println( "Try again. Parameter must be writed in the number format" );
+                scanner.nextLine();
             }
         }
     }

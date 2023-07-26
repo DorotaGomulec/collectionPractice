@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="1st version to push. (without exeptions handling)">
-      <change afterPath="$PROJECT_DIR$/src/HeightCompare.java" afterDir="false" />
+    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="1st version to push. (without exceptions handling)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -146,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689155398031</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1st version to push. (without exceptions handling)">
+      <created>1689247811708</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689247811708</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +174,7 @@
     <MESSAGE value="case 9 work" />
     <MESSAGE value="case 10 work" />
     <MESSAGE value="1st version to push. (without exeptions handling)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st version to push. (without exeptions handling)" />
+    <MESSAGE value="1st version to push. (without exceptions handling)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st version to push. (without exceptions handling)" />
   </component>
 </project>
