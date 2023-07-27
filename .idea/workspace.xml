@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="1st version to push. (without exceptions handling)">
+    <list default="true" id="f6c007cd-d6fe-4ee3-bbfd-3814dd716beb" name="Changes" comment="Menu class -add default in switch construction and exception handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689247811708</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Menu class -add default in switch construction and exception handling">
+      <created>1690361082688</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690361082688</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +182,7 @@
     <MESSAGE value="case 10 work" />
     <MESSAGE value="1st version to push. (without exeptions handling)" />
     <MESSAGE value="1st version to push. (without exceptions handling)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st version to push. (without exceptions handling)" />
+    <MESSAGE value="Menu class -add default in switch construction and exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu class -add default in switch construction and exception handling" />
   </component>
 </project>

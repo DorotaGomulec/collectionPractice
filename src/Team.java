@@ -10,36 +10,63 @@ public class Team {
     Scanner scanner = new Scanner( System.in );
     private String name;
     private int age;
+    private PlayerPosition playerPosition;
+    private int height;
+    private StaffRole staffRole;
+
     private void addEmployee() {
         System.out.println( "Write name" );
         name = scanner.nextLine();
 
-        System.out.println( "Write age" );
-        age = scanner.nextInt();
-
-        Employee employee = new Employee( name, age );
+        while (true) {
+            try {
+                System.out.println( "Write age" );
+                age = scanner.nextInt();
+                Employee employee = new Employee( name, age );
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println( "Parameter 'age' must be written as the whole number (e.g. 12 or 20)" );
+                scanner.nextLine();
+            }
+        }
     }
 
     public void addPlayer() {
         addEmployee();
 
-        System.out.println( "Choose player's field position (from 1 to 5)" );
-        System.out.println( "1. SETTER\n2. OPPOSITE\n3. MIDDLE_BLOCKER\n4. OUTSIDE_HITTER\n5. LIBERO" );
-        int userChoice = scanner.nextInt();
-        PlayerPosition playerPosition;
-        switch (userChoice) {
-            case 1 -> playerPosition = PlayerPosition.SETTER;
-            case 2 -> playerPosition = PlayerPosition.OPPOSITE;
-            case 3 -> playerPosition = PlayerPosition.MIDDLE_BLOCKER;
-            case 4 -> playerPosition = PlayerPosition.OUTSIDE_HITTER;
-            case 5 -> playerPosition = PlayerPosition.LIBERO;
-            default -> throw new IllegalStateException( "Unexpected value: " + userChoice );
+        while (true) {
+            try {
+                System.out.println( "Choose player's field position (from 1 to 5)" );
+                System.out.println( "1. SETTER\n2. OPPOSITE\n3. MIDDLE_BLOCKER\n4. OUTSIDE_HITTER\n5. LIBERO" );
+                int userChoice = scanner.nextInt();
+                switch (userChoice) {
+                    case 1 -> playerPosition = PlayerPosition.SETTER;
+                    case 2 -> playerPosition = PlayerPosition.OPPOSITE;
+                    case 3 -> playerPosition = PlayerPosition.MIDDLE_BLOCKER;
+                    case 4 -> playerPosition = PlayerPosition.OUTSIDE_HITTER;
+                    case 5 -> playerPosition = PlayerPosition.LIBERO;
+                }
+                if (userChoice < 1 | userChoice > 5) {
+                    throw new OutOfRangeException();
+                }
+                break;
+            } catch (Exception e) {
+                System.out.println( "The entered value must be in the numerical range from 1 to 5" );
+                scanner.nextLine();
+            }
         }
 
-        System.out.println( "How tall is player?" );
-        int height = scanner.nextInt();
-        scanner.nextLine(); //take out enter from previous scanner.nextInt
-
+        while (true) {
+            try {
+                System.out.println( "How tall is player?" );
+                height = scanner.nextInt();
+                scanner.nextLine(); //take out enter from previous scanner.nextInt
+                break;
+            } catch (Exception e) {
+                System.out.println( "Parameter 'height' must be write as the whole number (e.g. 165 or 180)" );
+                scanner.nextLine();
+            }
+        }
         Player player = new Player( name, age, playerPosition, height );
         playerArrayList.add( player );
         playerPositions.add( playerPosition );
@@ -49,29 +76,40 @@ public class Team {
     public void addStaff() {
         addEmployee();
 
-        System.out.println( "What is his/her role in team? Choose from 1 to 4." );
-        System.out.println( "1. COACH\n2. ASSISTANT\n3. PHYSIOTHERAPIST\n4. SCOUT\n" );
-        int userChoice = scanner.nextInt();
-        StaffRole staffRole = null;
-        switch (userChoice) {
-            case 1 -> staffRole = StaffRole.COACH;
-            case 2 -> staffRole = StaffRole.ASSISTANT;
-            case 3 -> staffRole = StaffRole.PHYSIOTHERAPIST;
-            case 4 -> staffRole = StaffRole.SCOUT;
+        while (true) {
+            try {
+                System.out.println( "What is his/her role in team? Choose from 1 to 4." );
+                System.out.println( "1. COACH\n2. ASSISTANT\n3. PHYSIOTHERAPIST\n4. SCOUT\n" );
+                int userChoice = scanner.nextInt();
+                switch (userChoice) {
+                    case 1 -> staffRole = StaffRole.COACH;
+                    case 2 -> staffRole = StaffRole.ASSISTANT;
+                    case 3 -> staffRole = StaffRole.PHYSIOTHERAPIST;
+                    case 4 -> staffRole = StaffRole.SCOUT;
+                    default -> throw new OutOfRangeException();
+                }
+                scanner.nextLine();
+                break;
+            } catch (Exception e) {
+                System.out.println( "The entered value must be in the numerical range from 1 to 5" );
+                scanner.nextLine();
+            }
         }
-        scanner.nextLine();
-
         Staff staff = new Staff( name, age, staffRole );
         staffArrayList.add( staff );
         employeeList.add( staff );
-
         stringStaffHashMap.put( staff.getName(), staff );
     }
+
 
     public void staffByName() {
         System.out.println( "Write name to get more info" );
         String staffToFind = scanner.nextLine();
-        System.out.println( stringStaffHashMap.get( staffToFind ) );
+        if (!stringStaffHashMap.containsKey( staffToFind )) {
+            System.out.println( "There isn't person with that name in the database" );
+        } else {
+            System.out.println( stringStaffHashMap.get( staffToFind ) );
+        }
     }
 
     public void showAllEmployee() {
@@ -98,7 +136,10 @@ public class Team {
             System.out.println( "Name: " + player.getName() + ", height: " + player.getHeight() );
         }
     }
+}
 
+class OutOfRangeException extends Exception {
 
 }
+
 

@@ -26,7 +26,6 @@ public class Menu {
 
     public void starter() {
 
-
         while (userChoice != 11) {
             try {
                 showMenu();
@@ -50,7 +49,7 @@ public class Menu {
                     default -> System.out.println( "Try again. The entered number must be between 1 and 11." );
                 }
             } catch (InputMismatchException e) {
-                System.out.println( "Try again. Parameter must be writed in the number format" );
+                System.out.println( "Try again. Parameter must be written in the number format" );
                 scanner.nextLine();
             }
         }
